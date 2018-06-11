@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         ResponseText = (TextView) findViewById(R.id.ResponseText);
 
         final RequestQueue mRequestQueue = Volley.newRequestQueue(getApplicationContext(), new HurlStack());
-        final String urlQueue = "http://139.59.26.135:8080/queuemp3";
-        final String urlDownload = "http://139.59.26.135:8080/downloadmp3";
+        final String urlQueue = "http://server_ip_or_name:portnumber/queuemp3";
+        final String urlDownload = "http://server_ip_or_name:portnumber/downloadmp3";
         mRequestQueue.start();
         QueueButton.setOnClickListener(new View.OnClickListener() {
             @Override
